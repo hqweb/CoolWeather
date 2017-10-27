@@ -1,9 +1,8 @@
-package com.example.administrator.coolweather;
+package com.example.hq.coolweatherdemoo;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.preference.PreferenceManager;
 import android.support.v4.view.GravityCompat;
@@ -11,7 +10,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -22,14 +20,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.example.administrator.coolweather.gson.Forecast;
-import com.example.administrator.coolweather.gson.Weather;
-import com.example.administrator.coolweather.service.AutoUpdateService;
-import com.example.administrator.coolweather.util.HttpUtil;
-import com.example.administrator.coolweather.util.Utility;
+import com.example.hq.coolweatherdemoo.gson.Forecast;
+import com.example.hq.coolweatherdemoo.gson.Weather;
+import com.example.hq.coolweatherdemoo.service.AutoUpdateService;
+import com.example.hq.coolweatherdemoo.util.HttpUtil;
+import com.example.hq.coolweatherdemoo.util.Utility;
 
 import java.io.IOException;
-import java.io.StreamCorruptedException;
 
 import okhttp3.Call;
 import okhttp3.Callback;

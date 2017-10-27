@@ -1,14 +1,10 @@
-package com.example.administrator.coolweather;
+package com.example.hq.coolweatherdemoo;
 
-import android.app.AlarmManager;
 import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.support.annotation.Nullable;
-import android.support.v4.widget.DrawerLayout;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,11 +15,11 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.administrator.coolweather.db.City;
-import com.example.administrator.coolweather.db.County;
-import com.example.administrator.coolweather.db.Province;
-import com.example.administrator.coolweather.util.HttpUtil;
-import com.example.administrator.coolweather.util.Utility;
+import com.example.hq.coolweatherdemoo.db.City;
+import com.example.hq.coolweatherdemoo.db.County;
+import com.example.hq.coolweatherdemoo.db.Province;
+import com.example.hq.coolweatherdemoo.util.HttpUtil;
+import com.example.hq.coolweatherdemoo.util.Utility;
 
 import org.litepal.crud.DataSupport;
 
@@ -64,7 +60,7 @@ public class ChooseAreaFragment  extends Fragment {
         titleText = (TextView) view.findViewById(R.id.title_text);
         backButton = (Button) view.findViewById(R.id.back_button);
         listView = (ListView) view.findViewById(R.id.list_view);
-        adapter = new ArrayAdapter<>(MyApplication.getContext(), android.R.layout.simple_list_item_1,
+        adapter = new ArrayAdapter<>(MyApplication.getContext(), R.layout.simple_list,
                 dataList);
         listView.setAdapter(adapter);
         return view;
@@ -79,7 +75,6 @@ public class ChooseAreaFragment  extends Fragment {
                                     long id) {
                 if (currentLevel == LEVEL_PROVINCE){
                     selectedProvince = proinceList.get(position);
-
                     queryCities();
                 } else if (currentLevel == LEVEL_CITY){
                     selectedCity = cityList.get(position);

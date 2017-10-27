@@ -1,4 +1,4 @@
-package com.example.administrator.coolweather.gson;
+package com.example.hq.coolweatherdemoo.gson;
 
 /**
  * Created by Administrator on 2017/10/26.

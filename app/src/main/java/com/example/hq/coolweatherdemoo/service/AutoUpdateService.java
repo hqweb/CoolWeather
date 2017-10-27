@@ -1,4 +1,4 @@
-package com.example.administrator.coolweather.service;
+package com.example.hq.coolweatherdemoo.service;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -8,13 +8,10 @@ import android.content.SharedPreferences;
 import android.os.IBinder;
 import android.os.SystemClock;
 import android.preference.PreferenceManager;
-import android.support.annotation.IntDef;
 
-import com.bumptech.glide.Glide;
-import com.example.administrator.coolweather.WeatherActivity;
-import com.example.administrator.coolweather.gson.Weather;
-import com.example.administrator.coolweather.util.HttpUtil;
-import com.example.administrator.coolweather.util.Utility;
+import com.example.hq.coolweatherdemoo.gson.Weather;
+import com.example.hq.coolweatherdemoo.util.HttpUtil;
+import com.example.hq.coolweatherdemoo.util.Utility;
 
 import java.io.IOException;
 
